@@ -1,4 +1,4 @@
-!Ecstatic  BEN HERE 2
+!Ecstatic
 
 Ecstatic is a static web-site generator engine written entirely in +Pharo>http://www.pharo.org+. The Ecstatic engine generates html from the markup language Pillar. Ecstatic is based on the following principles:
 
@@ -8,4 +8,4 @@ Ecstatic is a static web-site generator engine written entirely in +Pharo>http:/
 
 
 
-+Getting started>getting_started.pillar+
+Get started with the links on the right.
