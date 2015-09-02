@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head profile="http://www.w3.org/2005/10/profile">
+	<link rel="icon" 
+      type="image/png" 
+      href="/ecstatic/images/favicon.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <title></title>
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/ecstatic/theme/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/ecstatic/theme/print.css" media="print">
+	<script src="/ecstatic/theme/highlight/highlight.pack.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/ecstatic/theme/stylesheet.css" media="screen">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  
+  <body style="padding-top:150px">
+    <div class="container-fluid">
+    	<div class="inner">
+			<nav class="navbar navbar-default navbar-fixed-top">
+			
+	 		<header style="padding:10px;background-color:white;">
+				<div style="width:700px;margin:0 auto;">
+					<a href="/ecstatic" role="button">
+						<img alt="Ecstatic" src="http://placehold.it/200x200" style="height:100px;float:left;margin-right:10px">
+					</a>
+					<h1>Ecstatic</h1>
+					<h2>The Pharo Static website generator</h2>
+				</div>
+	 		</header>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="width:700px;margin:0 auto;">
+				  <ul class="nav navbar-nav">
+					
+					<li role="presentation" id="Home" >
+						<a href="/" 
+							>
+							Home
+							
+						</a>
+						
+					</li>
+					
+					<li role="presentation" id="Blog" >
+						<a href="/ecstatic/blog.html" 
+							>
+							Blog
+							
+						</a>
+						
+					</li>
+					
+					</ul>
+				</div>
+			</nav>
+        <hr>
+
+        <section id="main_content">
+      	<section>
+<h1>Installing Ecstatic</h1>
+
+<p>
+We will be expanding this page as soon as we support more installation modes.
+</p>
+<section>
+<h2>Downloading Ecstatic from github</h2>
+
+<p>
+For now the best way to download the Ecstatic engine is from github. The github repository includes install scripts and the main distribution files. You can proceed to install it as follows: 
+</p>
+<p>
+<figure><pre><code>$ git clone https://github.com/guillep/ecstatic.git
+$ cd ecstatic
+$ ./_scripts/install.sh</code></pre><figcaption></figcaption></figure>
+
+</p>
+<p>
+Once the installation is finished, you have to add the directory where ecstatic got installed to your <code>PATH</code> environment variable. If not, you will have to specify the full path to ecstatic to use ecstatic commands during website development.
+</p>
+</section><section>
+<h2>Binary downloads</h2>
+
+<p>
+We do not have of those yet :)
+</p></section></section>
+      	</section>
+		<footer class="footer">
+          This website is developed using <a href="https://github.com/pillar-markup/pillar-documentation">Pillar</a> and Ecstatic<br>
+          Candy theme by <a href="https://twitter.com/guillep">Guillermo Polito</a>.
+        </footer>
+      </div>
+    </div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script>
+	hljs.initHighlightingOnLoad();
+	$("#").addClass('active');
+	function transformAnnotatedParagraphs(pClass) {
+	    $("p." + pClass).wrap("<div class='alert alert-" + pClass + "' role='alert'/>" );
+	};
+	transformAnnotatedParagraphs('success');
+	transformAnnotatedParagraphs('info');
+	transformAnnotatedParagraphs('warning');
+	transformAnnotatedParagraphs('danger');
+	</script>
+    
+  </body>
+</html>

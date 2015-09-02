@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head profile="http://www.w3.org/2005/10/profile">
+	<link rel="icon" 
+      type="image/png" 
+      href="/ecstatic/images/favicon.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <title></title>
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/ecstatic/theme/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/ecstatic/theme/print.css" media="print">
+	<script src="/ecstatic/theme/highlight/highlight.pack.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/ecstatic/theme/stylesheet.css" media="screen">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  
+  <body style="padding-top:150px">
+    <div class="container-fluid">
+    	<div class="inner">
+			<nav class="navbar navbar-default navbar-fixed-top">
+			
+	 		<header style="padding:10px;background-color:white;">
+				<div style="width:700px;margin:0 auto;">
+					<a href="/ecstatic" role="button">
+						<img alt="Ecstatic" src="http://placehold.it/200x200" style="height:100px;float:left;margin-right:10px">
+					</a>
+					<h1>Ecstatic</h1>
+					<h2>The Pharo Static website generator</h2>
+				</div>
+	 		</header>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="width:700px;margin:0 auto;">
+				  <ul class="nav navbar-nav">
+					
+					<li role="presentation" id="Home" >
+						<a href="/" 
+							>
+							Home
+							
+						</a>
+						
+					</li>
+					
+					<li role="presentation" id="Blog" >
+						<a href="/ecstatic/blog.html" 
+							>
+							Blog
+							
+						</a>
+						
+					</li>
+					
+					</ul>
+				</div>
+			</nav>
+        <hr>
+
+        <section id="main_content">
+      	<section>
+<h1>Creating your first site</h1>
+
+<p>
+A Ecstatic site consists basically on a collection of Pillar files, and configuration file <code>pillar.conf</code> describing some basic information of your site. Ecstatic generates automatically the basic structure of your site and an example configuration file using its <code>createsite</code> command from the command line. Place yourself on the directory where you want to develop your site and execute
+</p>
+<p>
+<figure><pre><code>$ ecstatic createsite	</code></pre><figcaption></figcaption></figure>
+
+</p>
+<p>
+That command will generate the minimal structure for it. Right now, this minimal structure consists in just the <code>pillar.conf</code> file.
+</p>
+<section>
+<h2>Choosing a theme</h2>
+
+<p>
+Ecstatic provides several built in themes to customize the look and feel for your website. You can of course also develop your own. The choice of themes is for the moment the following:
+</p>
+<ul>
+<li> pure</li>
+<li> perso</li>
+<li> candy</li>
+<li> concise</li>
+</ul>
+
+<p>
+To configure your website to use a particular theme, you can use the <code>theme [name]</code> command, as follows:
+</p>
+<p>
+<figure><pre><code>$ ecstatic theme candy</code></pre><figcaption></figcaption></figure>
+
+</p>
+<p>
+You can change the theme for your website at any time.
+</p>
+<p class="Notice!">Themes are not forced to provide all kind of layouts for your website. For example, not all of them may provide a blog post layout. So choose carefully.</p>
+</section><section>
+<h2>Creating your first page</h2>
+
+<p>
+Ecstatic pages are written in pillar. Every <code>.pillar</code> file found in your website will get translated to html. Create for example, an <code>index.pillar</code> file to be the entry point of our website and put inside it some pillar.
+</p>
+<p>
+<figure><pre><code class="html">!This is my ecstatic website
+
+I can write 
+- pillar
+- {html: plain html}
+
+All this is supported by +Pharo&gt;http://pharo.org/web/files/pharo.png+</code></pre><figcaption></figcaption></figure>
+
+</p>
+</section><section>
+<h2>Generate your site</h2>
+
+<p>
+Once you have your pillar files ready to go, you can generate your site using the <code>generate</code> command, as follows:
+</p>
+<p>
+<figure><pre><code>$ ecstatic generate</code></pre><figcaption></figcaption></figure>
+
+</p>
+<p>
+If everything went ok, you will have your site generated in the <code>_site</code> folder. You can deploy it anywhere you want by just copying your <code>_site</code> folder you your destination
+</p></section></section>
+      	</section>
+		<footer class="footer">
+          This website is developed using <a href="https://github.com/pillar-markup/pillar-documentation">Pillar</a> and Ecstatic<br>
+          Candy theme by <a href="https://twitter.com/guillep">Guillermo Polito</a>.
+        </footer>
+      </div>
+    </div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script>
+	hljs.initHighlightingOnLoad();
+	$("#").addClass('active');
+	function transformAnnotatedParagraphs(pClass) {
+	    $("p." + pClass).wrap("<div class='alert alert-" + pClass + "' role='alert'/>" );
+	};
+	transformAnnotatedParagraphs('success');
+	transformAnnotatedParagraphs('info');
+	transformAnnotatedParagraphs('warning');
+	transformAnnotatedParagraphs('danger');
+	</script>
+    
+  </body>
+</html>
