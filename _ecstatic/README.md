@@ -1,5 +1,5 @@
 # Ecstatic
-Ecstatic is the ecstatic site generator for [Pharo](http://www.pharo.org). Ecstatic uses pillar as its markup language to describe pages, mustache templates to accommodate your content and plugins completely written in Pharo.
+Ecstatic is a static web site generator for [Pharo](http://www.pharo.org). Ecstatic uses pillar as its markup language to describe pages, mustache templates to accommodate your content and plugins completely written in Pharo.
 
 ### Installation & Usage
 
@@ -14,6 +14,10 @@ Pillar is a document model for [Pharo](http://www.pharo.org) that can be exporte
 - [Pillar Cheat Sheet](http://www.cheatography.com/benjaminvanryseghem/cheat-sheets/pillar/)
 - [Pillar docs](https://ci.inria.fr/pharo-contribution/view/Books/job/EnterprisePharoBook/lastBuild/artifact/PillarChap/Pillar.html)
 
+### Web hosting deployment methods
+
+Static web sites can be deployed in a large number of ways.  Instruction for other staic generators like Jekyll can be a useful reference
+- [Deployment methods (jekyll)](http://jekyllrb.com/docs/deployment-methods/)
 
 ### TODOs
 
