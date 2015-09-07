@@ -1,5 +1,7 @@
 
-# Cache Pharo infrastructure under the directory where this script is located.
+# Download Pharo infrastructure VM+Image under __cache folder 
+# located at the same place as this script.
+
 SCRIPT_FOLDER=`dirname $0`
 mkdir -p $SCRIPT_FOLDER/__cache
 cd $SCRIPT_FOLDER/__cache

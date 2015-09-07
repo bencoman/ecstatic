@@ -1,1 +1,0 @@
-$(dirname $0)/__cache/pharo $(dirname $0)/__cache/Pharo.image ecstatic "$@" --quit `pwd`

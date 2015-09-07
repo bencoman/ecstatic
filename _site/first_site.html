@@ -62,20 +62,33 @@
 <h1>Creating your first site</h1>
 
 <p>
-A Ecstatic site consists basically on a collection of Pillar files, and configuration file <code>pillar.conf</code> describing some basic information of your site. Ecstatic generates automatically the basic structure of your site and an example configuration file using its <code>createsite</code> command from the command line. Place yourself on the directory where you want to develop your site and execute
+A Ecstatic site consists basically of a collection of Pillar files. 
+Configuration file <code>pillar.conf</code> describes some basic information of your site. 
+Source files are stored in the root folder with the generated site being stored 
+under the _site folder.  
+The _ecstatic folder contains the Ecstatic executable infrastructure.
 </p>
 <p>
-<figure><pre><code>$ _ecstatic/run createsite	</code></pre><figcaption></figcaption></figure>
+The <code>createsite</code> command automatically generates a basic site structure 
+providing an example configuration file using its <code>createsite</code> command 
+from the command line. 
+Move the _ecstatic folder to where you want to develop your site and execute.
+</p>
+<p>
+<figure><pre><code>$ _ecstatic/createsite	</code></pre><figcaption></figcaption></figure>
 
 </p>
 <p>
-That command will generate the minimal structure for it. Right now, this minimal structure consists in just the <code>pillar.conf</code> file.
+That command will generate the minimal structure for it. 
+Right now, this minimal structure consists in just the <code>pillar.conf</code> file.
 </p>
 <section>
 <h2>Choosing a theme</h2>
 
 <p>
-Ecstatic provides several built in themes to customize the look and feel for your website. You can of course also develop your own. The choice of themes is for the moment the following:
+Ecstatic provides several built in themes to customize the look and feel for your website. 
+You can of course also develop your own. 
+The choice of themes is for the moment the following:
 </p>
 <ul>
 <li> pure</li>
@@ -85,21 +98,28 @@ Ecstatic provides several built in themes to customize the look and feel for you
 </ul>
 
 <p>
-To configure your website to use a particular theme, you can use the <code>theme [name]</code> command, as follows:
+To configure your website to use a particular theme, 
+you can use the <code>theme [name]</code> command, as follows:
 </p>
 <p>
-<figure><pre><code>$ _ecstatic/run theme candy</code></pre><figcaption></figcaption></figure>
+<figure><pre><code>$ _ecstatic/theme candy</code></pre><figcaption></figcaption></figure>
 
 </p>
 <p>
 You can change the theme for your website at any time.
 </p>
-<p class="Notice!">Themes are not forced to provide all kind of layouts for your website. For example, not all of them may provide a blog post layout. So choose carefully.</p>
+<p class="Notice!">Themes are not forced to provide all kind of layouts for your website. </p><p>
+For example, not all of them may provide a blog post layout. 
+So choose carefully.
+</p>
 </section><section>
 <h2>Creating your first page</h2>
 
 <p>
-Ecstatic pages are written in pillar. Every <code>.pillar</code> file found in your website will get translated to html. Create for example, an <code>index.pillar</code> file to be the entry point of our website and put inside it some pillar.
+Ecstatic pages are written in pillar. 
+Every <code>.pillar</code> file found in your website will get translated to html. 
+Create for example, an <code>index.pillar</code> file to be the entry point of our 
+website and put inside it some pillar.
 </p>
 <p>
 <figure><pre><code class="html">!This is my ecstatic website
@@ -115,14 +135,17 @@ All this is supported by +Pharo&gt;http://pharo.org/web/files/pharo.png+</code><
 <h2>Generate your site</h2>
 
 <p>
-Once you have your pillar files ready to go, you can generate your site using the <code>generate</code> command, as follows:
+Once you have your pillar files ready to go, you can generate your site 
+using the <code>generate</code> command, as follows:
 </p>
 <p>
-<figure><pre><code>$ _ecstatic/run generate</code></pre><figcaption></figcaption></figure>
+<figure><pre><code>$ _ecstatic/generate</code></pre><figcaption></figcaption></figure>
 
 </p>
 <p>
-If everything went ok, you will have your site generated in the <code>_site</code> folder. You can deploy it anywhere you want by just copying your <code>_site</code> folder you your destination
+If everything went ok, you will have your site generated in the <code>_site</code> folder. 
+You can deploy it anywhere you want by just copying your <code>_site</code> folder contents 
+to your destination
 </p></section></section>
 				</div>
 			</div>
@@ -134,7 +157,7 @@ If everything went ok, you will have your site generated in the <code>_site</cod
 				
 					<a class="categories-list-item" href="/ecstatic/first_site.html">Your first Site</a>
 				
-					<a class="categories-list-item" href="/ecstatic/fast_feedback.html">Fast Development</a>
+					<a class="categories-list-item" href="/ecstatic/fast_feedback.html">Fast Feedback</a>
 				
 				</div>
 			</div>

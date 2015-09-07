@@ -9,12 +9,12 @@ For now the best way to download the Ecstatic engine is from github. The github 
 [[[
 $ git clone https://github.com/guillep/ecstatic.git
 $ cd ecstatic
-$ ./_ecstatic/install.sh
+$ _ecstatic/install
 ]]]
 
-This downloads the Pharo runtime into the ./_ecstatic/__cache/ directory and installs the Ecstatic libraries.
+This downloads the Pharo runtime and Ecstatic application into the .../_ecstatic/__cache/ directory.
 
-Once the installation is finished, you have to add the directory where ecstatic got installed to your ==PATH== environment variable. If not, you will have to specify the full path to ecstatic to use ecstatic commands during website development.
+Once the installation is finished, you can add the _ecstatic directory to your ==PATH== environment variable. Alternatively, you can just continue to use _ecstatic/<command>. 
 
 !!Binary downloads
 
