@@ -17,6 +17,7 @@ Thumbs.db
 #Pharo files#
 #############
 
+__cache
 *.image
 *.changes
 package-cache
